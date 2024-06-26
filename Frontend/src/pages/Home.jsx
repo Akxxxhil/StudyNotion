@@ -12,10 +12,10 @@ function Home() {
   return (
     <div>
       {/* section 1 */}
-      <div className='max-w-maxContent text-white mx-auto w-11/12 flex flex-col relative justify-between'>
+      <div className='relative mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 text-white'>
         <NavLink to={"/signup"}>
-          <div className='mt-16 p-1 mx-auto rounded-full bg-[#161D29] font-bold w-fit transition-all duration-200 hover:scale-95  '>
-            <div className='flex flex-row gap-2 items-center px-10 py-[5px] text-[#999DAA]'>
+          <div className="group mt-16 p-1 mx-auto rounded-full bg-richblack-800 font-bold text-richblack-200 transition-all duration-200 hover:scale-95 w-fit drop-shadow-[0_1.5px_rgba(255,255,255,0.25)] hover:shadow-none">
+            <div className="flex felx-row items-center gap-2 rounded-full px-10 py-[5px] transition-all duration-200 group-hover:bg-richblack-900">
               <p>Become an Instructor</p>
               <p><BiRightArrowAlt /></p>
             </div>
@@ -26,11 +26,11 @@ function Home() {
           <div>Empower Your Future with Coding Skills</div>
         </div>
 
-        <div className='w-[90%] mt-4 text-center text-md font-bold text-[#838894]'>
+        <div className="mt-4 w-[80%] text-center text-lg font-bold text-richblack-300">
           With our online coding courses, you can learn at your own pace, from anywhere in the world, and get access to a wealth of resources, including hands-on projects, quizzes, and personalized feedback from instructors.
         </div>
 
-        <div className='flex flex-row gap-7 mt-8 mx-auto'>
+        <div className="flex flex-row gap-7 mt-8">
           <Actionactivebuttons active={true} linkto={"/signup"}>
             Learn More
           </Actionactivebuttons>
@@ -38,18 +38,19 @@ function Home() {
             Book a Demo
           </Actionactivebuttons>
         </div>
-      </div>
+      
 
-      <div className='shadow-blue-300 mx-9 my-12'>
-        <video muted loop autoPlay>
+      <div className='mx-3 my-7 shadow-[10px_-5px_50px_-5px] shadow-blue-200'>
+        <video muted loop autoPlay className="shadow-[20px_20px_rgba(255,255,255)]">
           <source src={Banner} type='video/mp4' />
         </video>
       </div>
+      
 
       {/* codes section 1  */}
       <div>
         <CodingBlocks
-          position={`flex-row`}
+           position={"lg:flex-row"}
           heading={"Unlock your coding potential with our online courses."}
           subheading={"Our courses are designed and taught by industry experts who have years of experience in coding and are passionate about sharing their knowledge with you."}
           Actionactivebuttons1={
@@ -76,7 +77,7 @@ function Home() {
       {/* codes section 2  */}
       <div>
         <CodingBlocks
-          position={`flex-row-reverse`}
+           position={"flex lg:flex-row-reverse my-20 justify-between flex-col lg:gap-10 gap-10"}
           heading={"Start coding in seconds"}
           subheading={"Go ahead, give it a try. Our hands-on learning environment means you'll be writing real code from your very first lesson."}
           Actionactivebuttons1={
@@ -100,6 +101,8 @@ function Home() {
         ></CodingBlocks>
       </div>
 
+      </div>
+
       {/* section 2 */}
 
       <div className='bg-white'>
@@ -119,26 +122,27 @@ function Home() {
           </div>
         </div>
 
-        <div className='w-11/12 mt-8'>
-          <div className='flex justify-center gap-8 mt-6'>
-            <div className='text-4xl font-semibold'>
+        <div className="mx-auto flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8">
+          <div className="mb-10 mt-[-100px] flex flex-col justify-between gap-7 lg:mt-20 lg:flex-row lg:gap-0">
+            <div className="text-4xl font-semibold lg:w-[45%] ">
             Get the skills you need for a job that is in demand.
             </div>
-            <div className='flex flex-col gap-6'>
-              <p className='font-semibold'>The modern StudyNotion is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.</p>
-             <div className='w-fit'>
+            <div className="flex flex-col items-start gap-10 lg:w-[40%]">
+              <p className="text-[16px]">The modern StudyNotion is the dictates its own terms. Today, to be a competitive specialist requires more than professional skills.</p>
+           
              <Actionactivebuttons active={true} linkto={"/signup"}>
               Learn More
               </Actionactivebuttons>
-             </div>
+            
             </div>
           </div>
         </div>
-      </div>
+      
 
     <Timeline/>
     
     <Learninglangiage/>
+    </div>
    
     
 

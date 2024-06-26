@@ -6,16 +6,16 @@ import lessons from "../../../assets/LearnLanguage/Plan_your_lessons.png"
 
 function Learninglangiage() {
     return (
-        <div className='flex flex-col'>
+        <div>
             <div className='bg-white'>
-                <div className='text-center font-semibold text-4xl'>Your swiss knife for learning any language</div>
-                <div className='mt-5 text-center mx-auto font-semibold w-[70%]'>Using spin making learning multiple languages easy. with 20+ languages realistic voice-over, progress tracking, custom schedule and more.</div>
-                <div className='flex items-center justify-center'>
-                    <img className='object-contain -mr-32' src={compare} alt="" />
-                    <img className='object-contain' src={progress} alt="" />
-                    <img className='object-contain -ml-36' src={lessons} alt="" />
+                <div className='text-4xl font-semibold text-center my-10'>Your swiss knife for learning any language</div>
+                <div className='text-center text-richblack-800 lg:w-[75%] mx-auto leading-6 text-base mt-3'>Using spin making learning multiple languages easy. with 20+ languages realistic voice-over, progress tracking, custom schedule and more.</div>
+                <div className='flex flex-col lg:flex-row items-center justify-center mt-8 lg:mt-0'>
+                    <img className='object-contain lg:-mr-32' src={compare} alt="" />
+                    <img className='object-contain lg:-mb-10 lg:-mt-0 -mt-12' src={progress} alt="" />
+                    <img className='object-contain lg:-ml-36 lg:-mt-5 -mt-16' src={lessons} alt="" />
                 </div>
-                <div className='w-fit mx-auto mt-5'>
+                <div className='w-fit mx-auto lg:mb-20 mb-8 -mt-5'>
                     <Actionactivebuttons active={true} linkto={"/signup"}>
                         Learn More
                     </Actionactivebuttons>

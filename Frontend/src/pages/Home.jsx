@@ -6,6 +6,7 @@ import Banner from "../assets/videos/banner.mp4"
 import CodingBlocks from '../Components/core/Homepage/CodingBlocks';
 import Timeline from '../Components/core/Homepage/Timeline';
 import Learninglangiage from '../Components/core/Homepage/Learninglangiage';
+import InstructorSection from '../Components/core/Homepage/InstructorSection';
 
 
 function Home() {
@@ -142,11 +143,16 @@ function Home() {
     <Timeline/>
     
     <Learninglangiage/>
+   
     </div>
    
     
 
       {/* section 3 */}
+
+      <div className='relative mx-auto my-20 flex w-11/12 max-w-maxContent flex-col items-center justify-between gap-8 bg-richblack-900 text-white'>
+      <InstructorSection/>
+      </div>
 
       {/* footer */}
     </div>

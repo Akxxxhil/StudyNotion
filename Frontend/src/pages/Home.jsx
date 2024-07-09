@@ -7,6 +7,7 @@ import CodingBlocks from '../Components/core/Homepage/CodingBlocks';
 import Timeline from '../Components/core/Homepage/Timeline';
 import Learninglangiage from '../Components/core/Homepage/Learninglangiage';
 import InstructorSection from '../Components/core/Homepage/InstructorSection';
+import Footer from "../Components/common/Footer"
 
 
 function Home() {
@@ -155,6 +156,9 @@ function Home() {
       </div>
 
       {/* footer */}
+      <div>
+            <Footer />
+        </div>
     </div>
   )
 }
